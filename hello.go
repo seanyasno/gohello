@@ -14,10 +14,10 @@ var Greetings = map[string]string{
 }
 
 func Hello(language string) (greeting string, err error) {
-	greeting, ok := Greetings[language]
+	gr, ok := Greetings[language]
 
 	if ok {
-		return greeting, nil
+		return gr, nil
 	}
 
 	return "", errors.New("Language not found")
